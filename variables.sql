@@ -1,13 +1,10 @@
------------------------===================-----------------------
------------------------DECLARING VARIABLES-----------------------
------------------------===================-----------------------
 SET SERVEROUTPUT ON;
 DECLARE 
     v varchar2(20) := 2 + 25 * 3;
 BEGIN
     dbms_output.put_line(v);
 END;
------------------------===================-----------------------
+
 DECLARE 
     v_text varchar2(50) NOT NULL DEFAULT 'Hello';
     v_number1 number := 50;
@@ -34,12 +31,10 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE(v_DATE4);
     DBMS_OUTPUT.PUT_LINE(v_DATE5);
     END;
-----------------==================================---------------
-----------------USING BOOLEAN DATA TYPE in PL/SQL----------------
-----------------==================================---------------
+
+
 DECLARE
     v_boolean boolean := true;
 BEGIN
     dbms_output.put_line(sys.diutil.bool_to_int(v_boolean));
 END;
-----------------==================================---------------
